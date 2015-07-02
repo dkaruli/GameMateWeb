@@ -1,0 +1,23 @@
+﻿<div class="row">
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+    <div class="col-md-4" data-ng-hide="authentication.isAuth">
+        <h2>Login</h2>
+        <p class="text-primary">If you have Username and Password, you can use the button below to access the secured content using a token.</p>
+        <p><a class="btn btn-info" href="#/login" role="button">Login &raquo;</a></p>
+    </div>
+    <div class="col-md-4" data-ng-hide="authentication.isAuth">
+        <h2>Sign Up</h2>
+        <p class="text-primary">Use the button below to create Username and Password to access the secured content using a token.</p>
+        <p><a class="btn btn-info" href="#/signup" role="button">Sign Up &raquo;</a></p>
+    </div>
+    <div class="col-md-8" data-ng-hide="!authentication.isAuth">
+        <h2>Logged In</h2>
+        <p class="text-primary">Congratulations you are logged in.</p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+</div>
